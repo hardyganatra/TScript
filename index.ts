@@ -8,5 +8,10 @@ interface Todo  {
 axios.get(url).then((res) => {
   const todo = res.data  as Todo;
   const ID = todo.id
-  console.log(ID)
+  ConsoleTodo(ID);
 })
+
+
+const ConsoleTodo = (id : number) => {
+  console.log(id)
+}
